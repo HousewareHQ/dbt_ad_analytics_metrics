@@ -1,0 +1,15 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_ad_analytics_metrics'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'snowflake-dev-dbt'
+
+vars:
+  facebook_ads_schema: TEST_FACEBOOK_ADS
+  facebook_ads_database: HOUSEWARE_HOUSEWARE
+
