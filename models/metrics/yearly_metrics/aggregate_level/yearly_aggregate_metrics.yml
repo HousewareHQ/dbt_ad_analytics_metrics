@@ -1,0 +1,167 @@
+version: 2
+metrics:
+
+  - name: ad_analytics__yearly_number_of_sessions
+    label: Ad-analytics yearly number of sessions
+    model: ref('ad_analytics_master_table')
+    description: Number of sessions on website on a yearly basis from paid ads
+    type: sum
+    sql: sessions
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_number_of_conversions
+    label: Ad-analytics yearly number of conversions
+    model: ref('ad_analytics_master_table')
+    description: Number of conversions on website on a yearly basis from paid ads
+    type: sum
+    sql: conversions
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_number_of_total_users
+    label: Ad-analytics yearly number of total users
+    model: ref('ad_analytics_master_table')
+    description: Number of total users on website on a yearly basis from paid ads
+    type: sum
+    sql: total_users
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_number_of_events_per_session
+    label: Ad-analytics yearly number of events per session
+    model: ref('ad_analytics_master_table')
+    description: Number of events per session on website on a yearly basis from paid ads
+    type: sum
+    sql: events_per_session
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_event_count
+    label: Ad-analytics yearly event count
+    model: ref('ad_analytics_master_table')
+    description: Count of events triggered on website on a yearly basis from paid ads
+    type: sum
+    sql: event_count
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_engagement_rate
+    label: Ad-analytics yearly engagement rate
+    model: ref('ad_analytics_master_table')
+    description: Engagement rate on website on a yearly basis from paid ads
+    type: sum
+    sql: engagement_rate
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_user_engagement_duration
+    label: Ad-analytics yearly user engagement duration
+    model: ref('ad_analytics_master_table')
+    description: User engagement duration on website on a yearly basis from paid ads
+    type: sum
+    sql: user_engagement_duration
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_number_of_engaged_sessions
+    label: Ad-analytics yearly number of engaged sessions
+    model: ref('ad_analytics_master_table')
+    description: Number of engaged sessions on website on a yearly basis from paid ads
+    type: sum
+    sql: engaged_sessions
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_total_revenue
+    label: Ad-analytics yearly number of total revenue
+    model: ref('ad_analytics_master_table')
+    description: Total revenue on website on a yearly basis from paid ads
+    type: sum
+    sql: total_revenue
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_number_of_new_users
+    label: Ad-analytics yearly number of new users
+    model: ref('ad_analytics_master_table')
+    description: Number of new users on website on a yearly basis from paid ads
+    type: sum
+    sql: new_users
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_avg_cost_per_session
+    label: Ad-analytics average yearly number of cost per session
+    model: ref('ad_analytics_master_table')
+    description: Average cost per session on website on a yearly basis from paid ads
+    type: average
+    sql: cost_per_session
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_avg_ga4_cost_per_conversion
+    label: Ad-analytics average yearly GA4 cost per conversion
+    model: ref('ad_analytics_master_table')
+    description: Average number of new users on website on a yearly basis from paid ads
+    type: average
+    sql: new_users
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_avg_cost_per_event
+    label: Ad-analytics average yearly cost per event
+    model: ref('ad_analytics_master_table')
+    description: Average cost per event on website on a yearly basis from paid ads
+    type: average
+    sql: cost_per_event
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_avg_roas
+    label: Ad-analytics average yearly return on ad spend
+    model: ref('ad_analytics_master_table')
+    description: Average return on ad spend on website on a yearly basis from paid ads
+    type: average
+    sql: roas
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
+
+  - name: ad_analytics__yearly_avg_cost_per_new_user
+    label: Ad-analytics average yearly cost per new user
+    model: ref('ad_analytics_master_table')
+    description: Average cost per new user on website on a yearly basis from paid ads
+    type: average
+    sql: cost_per_new_user
+    timestamp: date
+    time_grains: [year]
+    filters: []
+    dimensions: []
