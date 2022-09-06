@@ -2,27 +2,30 @@ name: 'dbt_ad_analytics_metrics'
 version: '1.0.0'
 config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
-profile: 'pilani'
+# Uncomment and add your profile here
+# profile:
 
 vars:
-  facebook_ads_schema: FIVETRAN_FACEBOOK_ADS
-  facebook_ads_database: PILANI
 
-  google_ads_schema: FIVETRAN_GOOGLE_ADS
-  google_ads_database: PILANI
+  # Add your custom schema/database information here
 
-  ga_4_schema: GOOGLE_ANALYTICS_4
-  ga_4_database: PILANI
+  # facebook_ads_schema: FIVETRAN_FACEBOOK_ADS
+  # facebook_ads_database:
+  #
+  # google_ads_schema: FIVETRAN_GOOGLE_ADS
+  # google_ads_database:
+  #
+  # ga_4_schema: GOOGLE_ANALYTICS_4
+  # ga_4_database:
 
   # Google Analytics 4: User Acquisition: First User Source / Medium Report
-  ga4_first_user_source_medium_report: first_user_source_medium_report
+  ga4_first_user_source_medium_report:
 
   # Google Analytics 4: User Acquisition: First User Campaign Report
-  ga4_first_user_campaign_report: first_user_campaign_report
+  ga4_first_user_campaign_report:
 
   # Google Analytics 4: Traffic Acquisition: Session Source / Medium Report
-  ga4_traffic_campaign_report: traffic_campaign_report
+  ga4_traffic_campaign_report:
 
   # Google Analytics 4: Traffic Acquisition: Session Campaign Report
-  ga4_traffic_source_medium_report: traffic_source_medium_report
+  ga4_traffic_source_medium_report:
