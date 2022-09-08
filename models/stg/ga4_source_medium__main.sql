@@ -9,7 +9,7 @@ with ga4_first_user_source_medium as (
   select *
   from {{ ref('ga4_traffic_source_medium') }}
 
-), analytics_source_medium_master_table as (
+), source as (
 
   select coalesce(ga4_traffic_source_medium.date, ga4_first_user_source_medium.date) date,
          coalesce(ga4_traffic_source_medium.session_medium, ga4_first_user_source_medium.first_user_medium) session_medium,
@@ -35,4 +35,4 @@ with ga4_first_user_source_medium as (
   and ga4_first_user_source_medium.date = ga4_traffic_source_medium.date
 )
 
-select * from analytics_source_medium_master_table
+select * from source

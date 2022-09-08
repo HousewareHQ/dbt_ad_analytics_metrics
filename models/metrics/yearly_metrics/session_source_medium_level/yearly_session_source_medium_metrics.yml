@@ -3,7 +3,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_sessions_by_session_source_medium
     label: Ad-analytics yearly number of sessions by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of sessions on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: sessions
@@ -14,7 +14,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_conversions_by_session_source_medium
     label: Ad-analytics yearly number of conversions by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of conversions on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: conversions
@@ -25,7 +25,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_total_users_by_session_source_medium
     label: Ad-analytics yearly number of total users by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of total users on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: total_users
@@ -36,7 +36,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_events_per_session_by_session_source_medium
     label: Ad-analytics yearly number of events per session by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of events per session on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: events_per_session
@@ -47,7 +47,7 @@ metrics:
 
   - name: ad_analytics__yearly_event_count_by_session_source_medium
     label: Ad-analytics yearly event count by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Count of events triggered on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: event_count
@@ -58,7 +58,7 @@ metrics:
 
   - name: ad_analytics__yearly_engagement_rate_by_session_source_medium
     label: Ad-analytics yearly engagement rate by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Engagement rate on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: engagement_rate
@@ -69,7 +69,7 @@ metrics:
 
   - name: ad_analytics__yearly_user_engagement_duration_by_session_source_medium
     label: Ad-analytics yearly user engagement duration by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: User engagement duration on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: user_engagement_duration
@@ -80,7 +80,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_engaged_sessions_by_session_source_medium
     label: Ad-analytics yearly number of engaged sessions by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of engaged sessions on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: engaged_sessions
@@ -91,7 +91,7 @@ metrics:
 
   - name: ad_analytics__yearly_total_revenue_by_session_source_medium
     label: Ad-analytics yearly number of total revenue by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Total revenue on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: total_revenue
@@ -102,7 +102,7 @@ metrics:
 
   - name: ad_analytics__yearly_number_of_new_users_by_session_source_medium
     label: Ad-analytics yearly number of new users by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of new users on website on a yearly basis from paid ads segmented by session source and medium
     type: sum
     sql: new_users
@@ -113,7 +113,7 @@ metrics:
 
   - name: ad_analytics__yearly_avg_cost_per_session_by_session_source_medium
     label: Ad-analytics average yearly number of cost per session by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per session on website on a yearly basis from paid ads segmented by session source and medium
     type: average
     sql: cost_per_session
@@ -124,7 +124,7 @@ metrics:
 
   - name: ad_analytics__yearly_avg_ga4_cost_per_conversion_by_session_source_medium
     label: Ad-analytics average yearly GA4 cost per conversion by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average number of new users on website on a yearly basis from paid ads segmented by session source and medium
     type: average
     sql: new_users
@@ -135,7 +135,7 @@ metrics:
 
   - name: ad_analytics__yearly_avg_cost_per_event_by_session_source_medium
     label: Ad-analytics average yearly cost per event by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per event on website on a yearly basis from paid ads segmented by session source and medium
     type: average
     sql: cost_per_event
@@ -146,7 +146,7 @@ metrics:
 
   - name: ad_analytics__yearly_avg_roas_by_session_source_medium
     label: Ad-analytics average yearly return on ad spend by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average return on ad spend on website on a yearly basis from paid ads segmented by session source and medium
     type: average
     sql: roas
@@ -157,7 +157,7 @@ metrics:
 
   - name: ad_analytics__yearly_avg_cost_per_new_user_by_session_source_medium
     label: Ad-analytics average yearly cost per new user by session source and medium
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per new user on website on a yearly basis from paid ads segmented by session source and medium
     type: average
     sql: cost_per_new_user

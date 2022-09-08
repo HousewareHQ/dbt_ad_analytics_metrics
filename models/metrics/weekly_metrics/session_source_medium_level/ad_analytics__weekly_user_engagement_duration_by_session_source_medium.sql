@@ -1,4 +1,4 @@
--- depends_on: {{ ref('ad_analytics_master_table') }}
+-- depends_on: {{ ref('ads__analytics__main') }}
 
 
 

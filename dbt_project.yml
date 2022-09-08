@@ -18,14 +18,19 @@ vars:
   # ga_4_schema: GOOGLE_ANALYTICS_4
   # ga_4_database:
 
+
+  # The following are the GA4 table names used by Houseware by default in case
+  # your organization has set up different GA4 table names, please edit
+  # these variables
+
   # Google Analytics 4: User Acquisition: First User Source / Medium Report
-  ga4_first_user_source_medium_report:
+  ga4_first_user_source_medium_report: first_user_source_medium_report
 
   # Google Analytics 4: User Acquisition: First User Campaign Report
-  ga4_first_user_campaign_report:
+  ga4_first_user_campaign_report: first_user_campaign_report
 
   # Google Analytics 4: Traffic Acquisition: Session Source / Medium Report
-  ga4_traffic_campaign_report:
+  ga4_traffic_campaign_report: traffic_campaign_report
 
   # Google Analytics 4: Traffic Acquisition: Session Campaign Report
-  ga4_traffic_source_medium_report:
+  ga4_traffic_source_medium_report: traffic_source_medium_report

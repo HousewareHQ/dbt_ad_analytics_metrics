@@ -3,7 +3,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_sessions
     label: Ad-analytics weekly number of sessions
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of sessions on website on a weekly basis from paid ads
     type: sum
     sql: sessions
@@ -14,7 +14,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_conversions
     label: Ad-analytics weekly number of conversions
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of conversions on website on a weekly basis from paid ads
     type: sum
     sql: conversions
@@ -25,7 +25,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_total_users
     label: Ad-analytics weekly number of total users
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of total users on website on a weekly basis from paid ads
     type: sum
     sql: total_users
@@ -36,7 +36,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_events_per_session
     label: Ad-analytics weekly number of events per session
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of events per session on website on a weekly basis from paid ads
     type: sum
     sql: events_per_session
@@ -47,7 +47,7 @@ metrics:
 
   - name: ad_analytics__weekly_event_count
     label: Ad-analytics weekly event count
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Count of events triggered on website on a weekly basis from paid ads
     type: sum
     sql: event_count
@@ -58,7 +58,7 @@ metrics:
 
   - name: ad_analytics__weekly_engagement_rate
     label: Ad-analytics weekly engagement rate
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Engagement rate on website on a weekly basis from paid ads
     type: sum
     sql: engagement_rate
@@ -69,7 +69,7 @@ metrics:
 
   - name: ad_analytics__weekly_user_engagement_duration
     label: Ad-analytics weekly user engagement duration
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: User engagement duration on website on a weekly basis from paid ads
     type: sum
     sql: user_engagement_duration
@@ -80,7 +80,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_engaged_sessions
     label: Ad-analytics weekly number of engaged sessions
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of engaged sessions on website on a weekly basis from paid ads
     type: sum
     sql: engaged_sessions
@@ -91,7 +91,7 @@ metrics:
 
   - name: ad_analytics__weekly_total_revenue
     label: Ad-analytics weekly number of total revenue
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Total revenue on website on a weekly basis from paid ads
     type: sum
     sql: total_revenue
@@ -102,7 +102,7 @@ metrics:
 
   - name: ad_analytics__weekly_number_of_new_users
     label: Ad-analytics weekly number of new users
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Number of new users on website on a weekly basis from paid ads
     type: sum
     sql: new_users
@@ -113,7 +113,7 @@ metrics:
 
   - name: ad_analytics__weekly_avg_cost_per_session
     label: Ad-analytics average weekly number of cost per session
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per session on website on a weekly basis from paid ads
     type: average
     sql: cost_per_session
@@ -124,7 +124,7 @@ metrics:
 
   - name: ad_analytics__weekly_avg_ga4_cost_per_conversion
     label: Ad-analytics average weekly GA4 cost per conversion
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average number of new users on website on a weekly basis from paid ads
     type: average
     sql: new_users
@@ -135,7 +135,7 @@ metrics:
 
   - name: ad_analytics__weekly_avg_cost_per_event
     label: Ad-analytics average weekly cost per event
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per event on website on a weekly basis from paid ads
     type: average
     sql: cost_per_event
@@ -146,7 +146,7 @@ metrics:
 
   - name: ad_analytics__weekly_avg_roas
     label: Ad-analytics average weekly return on ad spend
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average return on ad spend on website on a weekly basis from paid ads
     type: average
     sql: roas
@@ -157,7 +157,7 @@ metrics:
 
   - name: ad_analytics__weekly_avg_cost_per_new_user
     label: Ad-analytics average weekly cost per new user
-    model: ref('ad_analytics_master_table')
+    model: ref('ads__analytics__main')
     description: Average cost per new user on website on a weekly basis from paid ads
     type: average
     sql: cost_per_new_user

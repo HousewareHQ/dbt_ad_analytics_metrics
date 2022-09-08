@@ -3,12 +3,12 @@
 
 with google_ads_master_table as (
   select *
-  from {{ ref('ads_master_table') }}
+  from {{ ref('ads__main') }}
   where channel_name = 'Google Ads'
 
-), analytics_source_medium_master_table as (
+), ga4_source_medium__main__google_ads as (
   select *
-  from {{ ref('analytics_source_medium_master_table') }}
+  from {{ ref('ga4_source_medium__main') }}
   where session_source = 'google'
   and session_medium = 'cpc'
 
@@ -16,19 +16,19 @@ with google_ads_master_table as (
 
   select coalesce(date_day, date) as date,
 
-         analytics_source_medium_master_table.session_source,
-         analytics_source_medium_master_table.session_medium,
-         analytics_source_medium_master_table.session_source_medium,
-         analytics_source_medium_master_table.conversions,
-         analytics_source_medium_master_table.total_users,
-         analytics_source_medium_master_table.events_per_session,
-         analytics_source_medium_master_table.event_count,
-         analytics_source_medium_master_table.engagement_rate,
-         analytics_source_medium_master_table.user_engagement_duration,
-         analytics_source_medium_master_table.engaged_sessions,
-         analytics_source_medium_master_table.total_revenue,
-         analytics_source_medium_master_table.sessions,
-         analytics_source_medium_master_table.new_users,
+         ga4_source_medium__main__google_ads.session_source,
+         ga4_source_medium__main__google_ads.session_medium,
+         ga4_source_medium__main__google_ads.session_source_medium,
+         ga4_source_medium__main__google_ads.conversions,
+         ga4_source_medium__main__google_ads.total_users,
+         ga4_source_medium__main__google_ads.events_per_session,
+         ga4_source_medium__main__google_ads.event_count,
+         ga4_source_medium__main__google_ads.engagement_rate,
+         ga4_source_medium__main__google_ads.user_engagement_duration,
+         ga4_source_medium__main__google_ads.engaged_sessions,
+         ga4_source_medium__main__google_ads.total_revenue,
+         ga4_source_medium__main__google_ads.sessions,
+         ga4_source_medium__main__google_ads.new_users,
 
          google_ads_master_table.ad_id,
          google_ads_master_table.ad_name,
@@ -44,10 +44,10 @@ with google_ads_master_table as (
          google_ads_master_table.cost_per_conversion,
          google_ads_master_table.click_through_rate
 
-  from analytics_source_medium_master_table
+  from ga4_source_medium__main__google_ads
 
   full outer join google_ads_master_table
-  on analytics_source_medium_master_table.date = google_ads_master_table.date_day
+  on ga4_source_medium__main__google_ads.date = google_ads_master_table.date_day
 
 )
 
