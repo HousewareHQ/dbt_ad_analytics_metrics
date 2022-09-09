@@ -1,0 +1,12 @@
+packages:
+- package: dbt-labs/codegen
+  version: 0.6.0
+
+- package: dbt-labs/metrics
+  version: 0.1.5
+
+- git: "https://github.com/HousewareHQ/dbt_facebook_ads_metrics.git"
+  revision: v1.0.0
+
+- git: "https://github.com/HousewareHQ/dbt_google_ads_metrics.git"
+  revision: v1.0.3

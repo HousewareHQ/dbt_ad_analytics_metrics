@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: google_analytics_4
+    schema: "{{ var('ga_4_schema', 'fivetran_google_analytics_4') }}"
+    database: "{{ var('ga_4_database', target.database) }}"
+
+    tables:
+      - name: "{{ var('ga4_first_user_source_medium_report') }}"
+      - name: "{{ var('ga4_first_user_campaign_report') }}"
+      - name: "{{ var('ga4_traffic_source_medium_report') }}"
+      - name: "{{ var('ga4_traffic_campaign_report') }}"

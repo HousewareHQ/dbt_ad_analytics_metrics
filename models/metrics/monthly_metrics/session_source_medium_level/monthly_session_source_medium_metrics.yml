@@ -1,0 +1,167 @@
+version: 2
+metrics:
+
+  - name: ad_analytics__monthly_number_of_sessions_by_session_source_medium
+    label: Ad-analytics monthly number of sessions by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of sessions on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: sessions
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_number_of_conversions_by_session_source_medium
+    label: Ad-analytics monthly number of conversions by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of conversions on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: conversions
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_number_of_total_users_by_session_source_medium
+    label: Ad-analytics monthly number of total users by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of total users on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: total_users
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_number_of_events_per_session_by_session_source_medium
+    label: Ad-analytics monthly number of events per session by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of events per session on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: events_per_session
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_event_count_by_session_source_medium
+    label: Ad-analytics monthly event count by session source and medium
+    model: ref('ads__analytics__main')
+    description: Count of events triggered on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: event_count
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_engagement_rate_by_session_source_medium
+    label: Ad-analytics monthly engagement rate by session source and medium
+    model: ref('ads__analytics__main')
+    description: Engagement rate on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: engagement_rate
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_user_engagement_duration_by_session_source_medium
+    label: Ad-analytics monthly user engagement duration by session source and medium
+    model: ref('ads__analytics__main')
+    description: User engagement duration on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: user_engagement_duration
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_number_of_engaged_sessions_by_session_source_medium
+    label: Ad-analytics monthly number of engaged sessions by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of engaged sessions on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: engaged_sessions
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_total_revenue_by_session_source_medium
+    label: Ad-analytics monthly number of total revenue by session source and medium
+    model: ref('ads__analytics__main')
+    description: Total revenue on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: total_revenue
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_number_of_new_users_by_session_source_medium
+    label: Ad-analytics monthly number of new users by session source and medium
+    model: ref('ads__analytics__main')
+    description: Number of new users on website on a monthly basis from paid ads segmented by session source and medium
+    type: sum
+    sql: new_users
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_avg_cost_per_session_by_session_source_medium
+    label: Ad-analytics average monthly number of cost per session by session source and medium
+    model: ref('ads__analytics__main')
+    description: Average cost per session on website on a monthly basis from paid ads segmented by session source and medium
+    type: average
+    sql: cost_per_session
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_avg_ga4_cost_per_conversion_by_session_source_medium
+    label: Ad-analytics average monthly GA4 cost per conversion by session source and medium
+    model: ref('ads__analytics__main')
+    description: Average number of new users on website on a monthly basis from paid ads segmented by session source and medium
+    type: average
+    sql: new_users
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_avg_cost_per_event_by_session_source_medium
+    label: Ad-analytics average monthly cost per event by session source and medium
+    model: ref('ads__analytics__main')
+    description: Average cost per event on website on a monthly basis from paid ads segmented by session source and medium
+    type: average
+    sql: cost_per_event
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_avg_roas_by_session_source_medium
+    label: Ad-analytics average monthly return on ad spend by session source and medium
+    model: ref('ads__analytics__main')
+    description: Average return on ad spend on website on a monthly basis from paid ads segmented by session source and medium
+    type: average
+    sql: roas
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
+
+  - name: ad_analytics__monthly_avg_cost_per_new_user_by_session_source_medium
+    label: Ad-analytics average monthly cost per new user by session source and medium
+    model: ref('ads__analytics__main')
+    description: Average cost per new user on website on a monthly basis from paid ads segmented by session source and medium
+    type: average
+    sql: cost_per_new_user
+    timestamp: date
+    time_grains: [month]
+    filters: []
+    dimensions: [session_source_medium]
