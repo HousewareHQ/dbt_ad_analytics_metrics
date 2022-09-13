@@ -9,13 +9,13 @@ vars:
 
   # Add your custom schema/database information here
 
-  # facebook_ads_schema: FIVETRAN_FACEBOOK_ADS
+  facebook_ads_schema: FIVETRAN_FACEBOOK_ADS
   # facebook_ads_database:
-  #
-  # google_ads_schema: FIVETRAN_GOOGLE_ADS
+  
+  google_ads_schema: FIVETRAN_GOOGLE_ADS
   # google_ads_database:
-  #
-  # ga_4_schema: GOOGLE_ANALYTICS_4
+  
+  ga_4_schema: GOOGLE_ANALYTICS_4
   # ga_4_database:
 
 
