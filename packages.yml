@@ -6,7 +6,7 @@ packages:
   version: 0.1.5
 
 - git: "https://github.com/HousewareHQ/dbt_facebook_ads_metrics.git"
-  revision: v1.0.0
+  revision: v0.0.1
 
 - git: "https://github.com/HousewareHQ/dbt_google_ads_metrics.git"
-  revision: v1.0.4
+  revision: v0.0.1
