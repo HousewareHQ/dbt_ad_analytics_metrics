@@ -9,4 +9,4 @@ packages:
   revision: v0.0.1
 
 - git: "https://github.com/HousewareHQ/dbt_google_ads_metrics.git"
-  revision: v0.0.3
+  revision: v0.0.4
