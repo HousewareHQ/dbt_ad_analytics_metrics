@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__monthly_avg_cost_per_new_user',
+from {{ metrics.calculate(
+    metric('ad_analytics__monthly_avg_cost_per_new_user'),
     grain='month',
     dimensions=[],
     secondary_calculations=[]

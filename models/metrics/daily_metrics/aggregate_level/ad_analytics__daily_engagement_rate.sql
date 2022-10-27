@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__daily_engagement_rate',
+from {{ metrics.calculate(
+    metric('ad_analytics__daily_engagement_rate'),
     grain='day',
     dimensions=[],
     secondary_calculations=[]

@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__daily_avg_ga4_cost_per_conversion',
+from {{ metrics.calculate(
+    metric('ad_analytics__daily_avg_ga4_cost_per_conversion'),
     grain='day',
     dimensions=[],
     secondary_calculations=[]

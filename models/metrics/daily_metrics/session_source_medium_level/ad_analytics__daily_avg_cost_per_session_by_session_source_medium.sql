@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__daily_avg_cost_per_session_by_session_source_medium',
+from {{ metrics.calculate(
+    metric('ad_analytics__daily_avg_cost_per_session_by_session_source_medium'),
     grain='day',
     dimensions=['session_source_medium'],
     secondary_calculations=[]
