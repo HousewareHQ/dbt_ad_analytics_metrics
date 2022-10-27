@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__yearly_total_revenue',
+from {{ metrics.calculate(
+    metric('ad_analytics__yearly_total_revenue'),
     grain='year',
     dimensions=[],
     secondary_calculations=[]

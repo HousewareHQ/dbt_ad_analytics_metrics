@@ -6,8 +6,8 @@
 {{ config(materialized = 'table') }}
 
 select *
-from {{ metrics.metric(
-    metric_name='ad_analytics__yearly_avg_roas',
+from {{ metrics.calculate(
+    metric('ad_analytics__yearly_avg_roas'),
     grain='year',
     dimensions=[],
     secondary_calculations=[]
